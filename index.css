@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #5a91ba;
+  background: linear-gradient(90deg, #5a91ba 16%, #2d6ab6 75%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main .board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main .box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+}
+main .box span {
+  display: none;
+}
+main .box:hover {
+  cursor: pointer;
+}
+main .box.free:hover span {
+  display: block;
+}
+main :first-child,
+main :nth-child(4),
+main :nth-child(7) {
+  border-left: none;
+}
+main :nth-child(3),
+main :nth-child(6),
+main :nth-child(9) {
+  border-right: none;
+}
+main :nth-child(1),
+main :nth-child(2),
+main :nth-child(3) {
+  border-top: none;
+}
+main :nth-child(7),
+main :nth-child(8),
+main :nth-child(9) {
+  border-bottom: none;
+}
+main span {
+  color: rgba(255, 245, 245, 0.3);
+  font-size: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */
